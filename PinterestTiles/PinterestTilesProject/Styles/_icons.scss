@@ -1,0 +1,10 @@
+.icon-search span {
+    display:none;
+}
+.icon-search {
+    display:inline-block;
+}
+.icon-search:before {
+    font-size:23px;
+    color:$DDGreen;
+}

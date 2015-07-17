@@ -1,0 +1,114 @@
+/* Tiles Styles */
+.TilesContainer {
+    .Tile {
+        width: 22.5%;
+        margin: 10px 1%;
+        float: left;
+        padding:15px;
+        background-color:$LightGray;
+
+        .sf_colsOut {
+            padding:0;
+        }
+
+        /* Facts Tile Styles */
+        .Fact.sf_cols.row {
+            background-color:$LightGray;
+            text-align:center;
+            font-size:20px;
+            padding:20px 10px !important;
+            margin:0 !important;
+            margin-bottom:20px !important;
+            background-color:$MedGray;
+        }
+        .Fact.sf_cols.row p {
+            text-align:center;
+            font-size:20px;
+            margin-bottom:0 !important;
+            margin-top:20px !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+        .Fact.sf_cols.row .icon-Info:before {
+            font-size:50px;
+            position: relative;
+            top: 0;
+            left: 0;
+            color: $DDGray;
+        
+        }
+    }
+}
+
+/* Tile/Fact Color Schemes */
+.TilesContainer {
+    .Tile.FactLightGreen {
+        .Fact.sf_cols.row {
+            background-color:$LightGreen;
+        }
+        .Fact.sf_cols.row .icon-Info:before,
+        .Fact.sf_cols.row p {
+            color:$MedGreen;
+        }
+    }
+    .Tile.FactMedGreen {
+        .Fact.sf_cols.row {
+            background-color:$DDGreen;
+        }
+        .Fact.sf_cols.row .icon-Info:before,
+        .Fact.sf_cols.row p {
+            color:$White;
+        }
+    }
+    .Tile.FactDarkGreen {
+        .Fact.sf_cols.row {
+            background-color:$MedGreen;
+        }
+        .Fact.sf_cols.row .icon-Info:before,
+        .Fact.sf_cols.row p {
+            color:$White;
+        }
+    }
+    .Tile.FactMedGray {
+        .Fact.sf_cols.row {
+            background-color:$DarkerGray;
+        }
+        .Fact.sf_cols.row .icon-Info:before,
+        .Fact.sf_cols.row p {
+            color:$BorderColor;
+        }
+    }
+    .Tile.FactDarkGray {
+        .Fact.sf_cols.row {
+            background-color:$DDGray;
+        }
+        .Fact.sf_cols.row .icon-Info:before,
+        .Fact.sf_cols.row p {
+            color:$White;
+        }
+    }
+}
+
+
+/* Media Queries */
+@media screen and (max-width:960px){
+    .TilesContainer {
+        .Tile {
+            width:31%;
+        }
+    }
+}
+@media screen and (max-width:700px){
+    .TilesContainer {
+        .Tile {
+            width:46.5%;
+        }
+    }
+}
+@media screen and (max-width:400px){
+    .TilesContainer {
+        .Tile {
+            width:100%;
+        }
+    }
+}
