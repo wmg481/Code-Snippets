@@ -61,27 +61,27 @@
 
 /* DD Mixins */
 @mixin CenterContent() {
-    max-width: $DDMaxWidth;
+    max-width: $WGMaxWidth;
     margin-left: auto !important;
     margin-right: auto !important;
-    padding-left: $DDPadding !important;
-    padding-right: $DDPadding !important;
+    padding-left: $WGPadding !important;
+    padding-right: $WGPadding !important;
 }
 @mixin MobileCenterContent() {
-    max-width: $DDMaxWidth;
+    max-width: $WGMaxWidth;
     margin-left: auto !important;
     margin-right: auto !important;
-    padding-left: $DDMobilePadding !important;
-    padding-right: $DDMobilePadding !important;
+    padding-left: $WGMobilePadding !important;
+    padding-right: $WGMobilePadding !important;
 }
 @mixin FullBannerOverlay(){
-    @include background-opacity($DDGray, .85);
+    @include background-opacity($WGRegularGray, .85);
 }
 @mixin ListBannerOverlay(){
-    @include background-opacity($DDGreen, .85);
+    @include background-opacity($WGPink, .85);
 }
 @mixin PartialBannerOverlay(){
-    @include background-opacity($DDGreen, .85);
+    @include background-opacity($WGPink, .85);
 }
 
 @mixin BannerImageTreatment(){
@@ -96,5 +96,5 @@
     width:100%;
     display:block;
     z-index:1;
-    @include background-opacity($DDGray, .3);
+    @include background-opacity($WGRegularGray, .3);
 }

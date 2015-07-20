@@ -56,7 +56,7 @@
     @include transition(all 0.3s ease);
 }
 .header .MastRight .icon-search:hover:before {
-    background-color:$DDGreen;
+    background-color:$WGPink;
     color:$White;
 }
 
@@ -75,22 +75,22 @@
     float:left;
 }
 .header #nav > li > a {
-    color:$DDGray;
+    color:$WGRegularGray;
     font-size:18px;
     padding:5px 15px;
     margin-left:10px;
     @include transition(all 0.3s ease);
 }
     .header #nav > li.active > a {
-        border-bottom:1px solid $DDGreen;
-        color:$DDGreen;
+        border-bottom:1px solid $WGPink;
+        color:$WGPink;
         font-weight:500;
     }
     .header #nav > li > a:hover,
     .header #nav > li > a:focus {
         color:$White;
         text-decoration:none;
-        background-color:$DDGreen;
+        background-color:$WGPink;
     }
 
 /* Mobile Navigation */
@@ -134,7 +134,7 @@
         a, .userLog, .FooterLinks a {
             text-align: left;
             margin-bottom: -1px;
-            border-bottom: 1px solid $DarkGreen;
+            border-bottom: 1px solid $WGPink;
             padding-bottom: 20px;
             padding-top: 20px;
             padding-left: 5%;
@@ -142,8 +142,8 @@
             display: block;
             text-decoration: none;
             color: $White;
-            background-color:$DDGreen;
-            border-top: 1px solid $DarkGreen;
+            background-color:$WGPink;
+            border-top: 1px solid $WGPink;
             font-weight:500;
         }
         li:first-child a {
@@ -200,7 +200,7 @@
                 a, a:visited, a:link, a:hover {
                 border-top: 1px solid $BorderColor;
                 border-bottom: 1px solid $BorderColor;
-                color: $MedGreen !important;
+                color: $WGPink !important;
                 display: block;
                 margin-top: -1px;
                 padding: 20px;
@@ -214,7 +214,7 @@
 .PageBorder {
     width:100%;
     height:10px;
-    background-color:$LightGray;
+    background-color:$WGRegularGray;
     display:block;
     position:absolute;
     top:120px;

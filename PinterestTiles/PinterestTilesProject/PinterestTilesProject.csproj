@@ -70,6 +70,12 @@
     <Content Include="Styles\TileStyles.min.css">
       <DependentUpon>TileStyles.css</DependentUpon>
     </Content>
+    <Content Include="Styles\WGGitHub.css">
+      <DependentUpon>WGGitHub.scss</DependentUpon>
+    </Content>
+    <Content Include="Styles\WGGitHub.min.css">
+      <DependentUpon>WGGitHub.css</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -78,13 +84,13 @@
   <ItemGroup>
     <Content Include="Configuration\ToolboxesConfig.config" />
     <Content Include="Styles\TileStyles.scss" />
-    <Content Include="Styles\_demo-structure.scss" />
+    <Content Include="Styles\_github.scss" />
     <Content Include="Styles\_colors.scss" />
     <Content Include="Styles\_font-awesome.scss" />
     <Content Include="Styles\_fonts.scss" />
     <Content Include="Styles\_tiles.scss" />
-    <Content Include="Styles\_type.scss" />
-    <Content Include="Styles\_mixins.scss" />
+    <Content Include="Styles\WGTheme\_type.scss" />
+    <Content Include="Styles\WGTheme\_mixins.scss" />
     <Content Include="Styles\_icons.scss" />
     <Content Include="Styles\_helpers.scss" />
     <Content Include="Styles\_animations.scss" />
@@ -170,10 +176,25 @@
     <Content Include="Fonts\fontawesome\fontawesome-webfont.ttf" />
     <Content Include="Fonts\fontawesome\fontawesome-webfont.woff" />
     <Content Include="Fonts\fontawesome\fontawesome-webfont.woff2" />
-    <Content Include="Styles\skeleton\_footer.scss" />
-    <Content Include="Styles\skeleton\_header.scss" />
-    <Content Include="Styles\skeleton\_main.scss" />
-    <Content Include="Styles\skeleton\_structure.scss" />
+    <Content Include="Styles\WGTheme\_footer.scss" />
+    <Content Include="Styles\WGTheme\_header.scss" />
+    <Content Include="Styles\WGTheme\_main.scss" />
+    <Content Include="Styles\WGTheme\_structure.scss" />
+    <Content Include="Styles\WGGitHub.scss" />
+    <Content Include="Styles\WGTheme\_colors.scss" />
+    <Content Include="Styles\WGTheme\_fonts.scss" />
+    <Content Include="Styles\WGTheme\_WG.scss" />
+    <Content Include="Styles\WGTheme\_variables.scss" />
+    <Content Include="Styles\MNMTheme\_colors.scss" />
+    <Content Include="Styles\MNMTheme\_fonts.scss" />
+    <Content Include="Styles\MNMTheme\_footer.scss" />
+    <Content Include="Styles\MNMTheme\_header.scss" />
+    <Content Include="Styles\MNMTheme\_main.scss" />
+    <Content Include="Styles\MNMTheme\_mixins.scss" />
+    <Content Include="Styles\MNMTheme\_structure.scss" />
+    <Content Include="Styles\MNMTheme\_type.scss" />
+    <Content Include="Styles\MNMTheme\_variables.scss" />
+    <Content Include="Styles\MNMTheme\_WG.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

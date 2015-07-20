@@ -3,12 +3,12 @@ $blockquote-font-size:20px;
 $body-font-size:18px !global;
 
 body {
-    font-weight: normal;
+    font-weight: $Museo-Reg;
     font-style: normal;
     text-align: left;
-    font-family: "futura-pt", sans-serif;
+    font-family: $Museo;
     font-size:$body-font-size;
-    color:$DDGray;
+    color:$WGRegularGray;
 }
 
 p {
@@ -23,7 +23,7 @@ sup {
 }
 
 strong, b {
-    font-weight:700;
+    font-weight:$Museo-Bold;
     font-style:normal;
 }
 
@@ -34,7 +34,7 @@ strong em, strong i,
 b em, b i,
 em strong, em b,
 i strong, i b {
-    font-weight:700;
+    font-weight:$Museo-Bold;
     font-style:italic;
 }
 
@@ -42,20 +42,21 @@ label {
 }
 
 h1 {
-    font-weight:400;
-    font-size:48px;
-    color: $White;
+    font-weight:$Museo-Bold;
+    font-size:24px;
+    color: $WGRegularGray;
     font-style:normal;
 }
 
 h2 {
-    font-weight:400;
-    font-size:30px;
-    color:$MedGreen;
+    font-weight:$Museo-Bold;
+    font-size:18px;
+    color:$WGPink;
     font-style:normal;
+    letter-spacing:.09em;
 }
 
-h3 {
+/*h3 {
     font-weight:400;
     font-style:normal;
     color:$DDGray;
@@ -86,20 +87,20 @@ h6 {
     font-weight:400;
     color:$DarkGreen;
     line-height:25.6px;
-}
+}*/
 
 a {
     cursor: pointer;
-    color:$MedGreen;
+    color:$WGPink;
     text-decoration:none;
 }
 
 a:link, a:visited {
-    color:$DarkGreen;
+    color:$WGPink;
 }
 
 a:hover, a:active {
-    color:$DDGreen;
+    color:$WGPink;
 }
 
 a[href^="mailto"] {
@@ -123,7 +124,7 @@ blockquote {
     };
     footer {
         font-size:$body-font-size !important;
-        color:$DDGray;
+        color:$WGRegularGray;
 
         cite {
             font-style:italic;
@@ -148,7 +149,7 @@ blockquote {
         };
         li:before {
             content: "■ ";
-            color: $DDGreen;
+            color: $WGPink;
             position:relative;
             top:-2px;
             margin-right:10px;
@@ -193,7 +194,7 @@ blockquote {
     blockquote {
         margin-top: 15px;
         margin-bottom: 15px;
-        background-color:$LightGray;
+        background-color:$WGLightGray;
     }
     .MainContainer ul,
     .MainContainer ol {

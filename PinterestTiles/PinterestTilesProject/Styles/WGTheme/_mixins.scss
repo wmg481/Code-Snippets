@@ -1,0 +1,100 @@
+
+@mixin css3-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+   -khtml-#{$property}: #{$value};
+     -moz-#{$property}: #{$value};
+      -ms-#{$property}: #{$value};
+       -o-#{$property}: #{$value};
+          #{$property}: #{$value};
+}
+
+/* TRANSITION */
+@mixin transition($properties...) {
+  
+  @if length($properties) >= 1 {
+    @include css3-prefix('transition', $properties);
+  }
+
+  @else {
+    @include css3-prefix('transition', $what: all, $length: 1s, $easing: ease-in-out);
+  }
+}
+
+/* BOX SHADOW */
+@mixin box-shadow($x: 2px, $y: 2px, $blur: 5px, $color: rgba(0,0,0,.4), $inset: "") {
+  @if ($inset != "") {
+    @include css3-prefix('box-shadow', $inset $x $y $blur $color);
+  } @else {
+    @include css3-prefix('box-shadow', $x $y $blur $color);
+  }
+}
+
+/* BACKGROUND COLOR OPACITY */
+@mixin background-opacity($color: #000, $opacity: 0.85) {
+  background: $color;
+  background: rgba($color, $opacity);
+}
+
+/* BACKGROUND SIZE */
+@mixin background-size($width: 100%, $height: $width) {
+  @if type-of($width) == 'number' and $height != null {
+    @include css3-prefix('background-size', $width $height);
+  } @else {
+    @include css3-prefix('background-size', $width);
+  }
+}
+
+/* BORDER RADIUS */
+@mixin border-radius($radius: 5px) {
+    @include css3-prefix('border-radius', $radius);
+}
+
+/* TRANSFORM  */
+@mixin transform($params) {
+  @include css3-prefix('transform', $params);
+}
+
+/* TRANSFORM STYLE */
+@mixin transform-style($style: preserve-3d) {
+  @include css3-prefix('transform-style', $style);
+}
+
+/* DD Mixins */
+@mixin CenterContent() {
+    max-width: $WGMaxWidth;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: $WGPadding !important;
+    padding-right: $WGPadding !important;
+}
+@mixin MobileCenterContent() {
+    max-width: $WGMaxWidth;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: $WGMobilePadding !important;
+    padding-right: $WGMobilePadding !important;
+}
+@mixin FullBannerOverlay(){
+    @include background-opacity($WGRegularGray, .85);
+}
+@mixin ListBannerOverlay(){
+    @include background-opacity($WGPink, .85);
+}
+@mixin PartialBannerOverlay(){
+    @include background-opacity($WGPink, .85);
+}
+
+@mixin BannerImageTreatment(){
+    @include css3-prefix(filter, grayscale(1));
+}
+@mixin BannerImageColor(){
+    position:absolute;
+    top:0;
+    left:0;
+    content: " ";
+    height:100%;
+    width:100%;
+    display:block;
+    z-index:1;
+    @include background-opacity($WGRegularGray, .3);
+}
