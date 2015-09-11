@@ -1,0 +1,41 @@
+//MNM Branding Elements
+@import "MNM/_MNM-colors";
+@import "MNM/_MNM-fonts";
+
+//MNM GitHub Branding
+
+//Header
+header {
+    .logo {
+        width: 165px;
+        height: 43px;
+
+        @media screen and (min-width:$screen-sm){
+            height: 68px;
+            width: 261px;
+        }
+
+        svg:not(root){
+            height: 43px;
+            width: 165px;
+
+            @media screen and (min-width:$screen-sm){
+                height: 68px;
+                width: 261px;
+            }
+        }
+    }
+    nav.TopLinks {
+        ul{
+            li {
+                a {
+                    color:$MNMGreen;
+
+                    &:hover {
+                        color:$MNMLightGreen;
+                    }
+                }
+            }
+        }
+    }
+}

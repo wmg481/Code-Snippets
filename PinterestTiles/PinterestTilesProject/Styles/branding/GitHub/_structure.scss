@@ -1,0 +1,54 @@
+//Header
+header {
+    background: #fff;
+    width: 100%;
+    z-index: 8009;
+
+    .logo {
+        margin-top:20px;
+        margin-bottom:20px;
+        display: block;
+        background-size: contain;
+        height: auto;
+        float: left;
+
+        @media screen and (min-width:$screen-sm){
+            margin-left: 20px;
+        }
+
+        &:hover {
+            @media screen and (min-width:$screen-sm){
+                @include filter(saturate, 130%);
+            }
+        }
+
+        svg:not(root){
+            max-width: 100%;
+        }
+    }
+    nav.TopLinks {
+        float:right;
+        text-align:right;
+        margin-top: 15px;
+
+        @media screen and (min-width:$screen-sm){
+            margin-right: 20px;
+            margin-top: 25px;
+        }
+
+        ul, li {
+            list-style-type:none;
+            margin:0;
+            padding:0;
+        }
+        ul {
+            li {
+                float:left;
+                font-size:40px;
+            }
+        }
+    }
+}
+
+//Main Layout
+

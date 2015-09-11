@@ -1,0 +1,39 @@
+/* DD Mixins */
+@mixin CenterContent() {
+    max-width: $DDMaxWidth;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: $DDPadding !important;
+    padding-right: $DDPadding !important;
+}
+@mixin MobileCenterContent() {
+    max-width: $DDMaxWidth;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: $DDMobilePadding !important;
+    padding-right: $DDMobilePadding !important;
+}
+@mixin FullBannerOverlay(){
+    @include background-opacity($DDGray, .85);
+}
+@mixin ListBannerOverlay(){
+    @include background-opacity($DDGreen, .85);
+}
+@mixin PartialBannerOverlay(){
+    @include background-opacity($DDGreen, .85);
+}
+
+@mixin BannerImageTreatment(){
+    @include css3-prefix(filter, grayscale(1));
+}
+@mixin BannerImageColor(){
+    position:absolute;
+    top:0;
+    left:0;
+    content: " ";
+    height:100%;
+    width:100%;
+    display:block;
+    z-index:1;
+    @include background-opacity($DDGray, .3);
+}

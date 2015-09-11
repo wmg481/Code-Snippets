@@ -1,0 +1,20 @@
+$Museo: "museo-slab";
+
+@mixin MuseoRegular(){
+    font-family: $Museo;
+    font-weight:300;
+}
+@mixin MuseoRegularItalic(){
+    font-family: $Museo;
+    font-weight:300;
+    font-style:italic;
+}
+@mixin MuseoBold(){
+    font-family: $Museo;
+    font-weight:700;
+}
+@mixin MuseoBoldItalic(){
+    font-family: $Museo;
+    font-weight:700;
+    font-style:italic;
+}

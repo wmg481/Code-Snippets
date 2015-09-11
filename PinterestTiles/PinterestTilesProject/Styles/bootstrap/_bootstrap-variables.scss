@@ -1,3 +1,4 @@
+$PrimaryColor: #0FDBFA !default;
 
 // Override Bootstrap's SASS variables here
 $gray-base:              #000;
@@ -7,7 +8,7 @@ $gray:                   lighten($gray-base, 33.5%); // #555
 $gray-light:             lighten($gray-base, 46.7%); // #777
 $gray-lighter:           lighten($gray-base, 93.5%); // #eee
 
-$brand-primary:$DDGreen;
+$brand-primary:         $PrimaryColor;
 $brand-success:         #5cb85c;
 $brand-info:            #5bc0de;
 $brand-warning:         #f0ad4e;

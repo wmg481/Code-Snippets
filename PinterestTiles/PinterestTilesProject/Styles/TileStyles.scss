@@ -1,5 +1,51 @@
-//GitHub Demo Structure
-@import "_colors";
-@import "_fonts";
-@import "_demo-structure";
+// Mixins - Included with GitHub Theme
+//@import "assets/_mixins";
 
+// Colors
+@import "_colors";
+
+//Icons
+@import "_icons";
+
+// Fonts - Included with GitHub Theme
+//@import "font-awesome/_font-awesome";
+
+// Animations - Included with GitHub Theme
+//@import "assets/_animations";
+
+// Normalize - Included with GitHub Theme
+//@import "assets/_normalize";
+
+// Bootstrap - Included with GitHub Theme
+//@import "bootstrap/_bootstrap";
+//@import "bootstrap/_bootstrap-variables";
+
+// Typography
+//@import "_type";
+
+// Buttons
+//@import "_buttons";
+
+// Skeleton
+/*@import "skeleton/_structure";
+@import "skeleton/_header";
+@import "skeleton/_main";
+@import "skeleton/_sidebar";
+@import "skeleton/_footer";*/
+
+// Helpers
+@import "assets/_helpers";
+
+// Project Styles
+/*@import "_page-banners";
+@import "_list-grid";
+@import "_tiles";
+@import "_home";*/
+
+    // IE
+    /*@import 'ie/_ie10';
+    @import 'ie/_ie9';
+    @import 'ie/_ie8';*/ 
+
+// Print
+/*@import "_print";*/
