@@ -1,22 +1,16 @@
+//Brand Colors
+@import "branding/MNM/_MNM-colors";
 
+//Project Colors
 $White: #fff !global;
 $Black: #000 !global;
 
-$DDGreen: #bdd73e !global;
-$LightGreen: #e9f1bd !global;
-$MedGreen: #a8c034 !global;
-$DarkGreen: #7f9513 !global;
-$Highlight: #277953 !global;
+$Green: $MNMGreen !global;
+$LightGreen: lighten($MNMGreen, 25%) !global;
+$MedGreen: darken($MNMGreen, 10%) !global;
+$DarkGreen: darken($MNMGreen, 40%) !global;
 
-$DDGray: #77787b !global;
-$LightGray: #f1f2f2 !global;
-$MedGray: #e3e4e4 !global;
-$DarkerGray: #c4c3c3 !global;
-
-$LightBorderColor: #cdcdcd !global;
-$BorderColor: #707070 !global;
-
-$blockquote-border-color: $DDGreen;
-
-$boxShadow: rgba(0,0,0,.5) !global;
-$FooterBoxShadow: rgba(0,0,0,.1) !global;
+$Blue: $MNMBlue !global;
+$LightBlue: $MNMLightBlue !global;
+$DarkBlue: darken($MNMBlue, 20%) !global;
+$Highlight: $MNMLightBlue !global;

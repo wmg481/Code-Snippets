@@ -23,7 +23,14 @@ h1 {
     font-size:64px;
     margin:0;
     padding:0;
+}
+a {
+    color:$MNMGreen;
 
+    &:hover {
+        text-decoration:none;
+        color:$MNMLightGreen;
+    }
 }
 
 //Header

@@ -5,7 +5,7 @@
         margin: 10px 1%;
         float: left;
         padding:15px;
-        background-color:$LightGray;
+        background-color:$MNMOverlay;
 
         .sf_colsOut {
             padding:0;
@@ -13,13 +13,12 @@
 
         /* Facts Tile Styles */
         .Fact.sf_cols.row {
-            background-color:$LightGray;
+            background-color:$LightBlue;
             text-align:center;
             font-size:20px;
             padding:20px 10px !important;
             margin:0 !important;
             margin-bottom:20px !important;
-            background-color:$MedGray;
         }
         .Fact.sf_cols.row p {
             text-align:center;
@@ -28,13 +27,14 @@
             margin-top:20px !important;
             margin-left: 0 !important;
             margin-right: 0 !important;
+            color:$Green;
         }
         .Fact.sf_cols.row .icon-Info:before {
             font-size:50px;
             position: relative;
             top: 0;
             left: 0;
-            color: $DDGray;
+            color: $DarkBlue;
         
         }
     }
@@ -42,6 +42,7 @@
 
 /* Tile/Fact Color Schemes */
 .TilesContainer {
+    margin-top:30px;
     .Tile.FactLightGreen {
         .Fact.sf_cols.row {
             background-color:$LightGreen;
@@ -53,7 +54,7 @@
     }
     .Tile.FactMedGreen {
         .Fact.sf_cols.row {
-            background-color:$DDGreen;
+            background-color:$Green;
         }
         .Fact.sf_cols.row .icon-Info:before,
         .Fact.sf_cols.row p {
@@ -71,16 +72,16 @@
     }
     .Tile.FactMedGray {
         .Fact.sf_cols.row {
-            background-color:$DarkerGray;
+            background-color:$Blue;
         }
         .Fact.sf_cols.row .icon-Info:before,
         .Fact.sf_cols.row p {
-            color:$BorderColor;
+            color:$Green;
         }
     }
     .Tile.FactDarkGray {
         .Fact.sf_cols.row {
-            background-color:$DDGray;
+            background-color:$DarkBlue;
         }
         .Fact.sf_cols.row .icon-Info:before,
         .Fact.sf_cols.row p {
