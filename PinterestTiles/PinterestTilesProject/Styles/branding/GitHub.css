@@ -8624,10 +8624,26 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+body, html {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0; }
+
 header {
   background: #fff;
   width: 100%;
-  z-index: 8009; }
+  z-index: 8009;
+  top: 0 !important;
+  position: fixed !important;
+  border: none;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+  header + .container {
+    margin-top: 140px; }
   header .logo {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -8663,23 +8679,45 @@ header {
       float: left;
       font-size: 40px; }
 
-header .logo {
-  width: 165px;
-  height: 43px; }
-  @media screen and (min-width: 768px) {
-    header .logo {
-      height: 68px;
-      width: 261px; } }
-  header .logo svg:not(root) {
-    height: 43px;
-    width: 165px; }
+body {
+  background-color: #0d5cab; }
+
+body {
+  font-family: "tablet-gothic-condensed";
+  font-weight: 400; }
+
+header + .container {
+  color: #fff; }
+
+h1, h2, h3, h4, h5, h6, strong, b {
+  font-family: "tablet-gothic-condensed";
+  font-weight: 700; }
+
+h1 {
+  font-size: 64px;
+  margin: 0;
+  padding: 0; }
+
+header {
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); }
+  header .logo {
+    width: 165px;
+    height: 43px; }
     @media screen and (min-width: 768px) {
-      header .logo svg:not(root) {
+      header .logo {
         height: 68px;
         width: 261px; } }
-header nav.TopLinks ul li a {
-  color: #72c267; }
-  header nav.TopLinks ul li a:hover {
-    color: #67c53b; }
+    header .logo svg:not(root) {
+      height: 43px;
+      width: 165px; }
+      @media screen and (min-width: 768px) {
+        header .logo svg:not(root) {
+          height: 68px;
+          width: 261px; } }
+  header nav.TopLinks ul li a {
+    color: #72c267; }
+    header nav.TopLinks ul li a:hover {
+      color: #67c53b; }
 
 /*# sourceMappingURL=GitHub.css.map */

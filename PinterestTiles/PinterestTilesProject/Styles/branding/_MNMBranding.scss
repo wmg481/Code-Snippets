@@ -3,9 +3,33 @@
 @import "MNM/_MNM-fonts";
 
 //MNM GitHub Branding
+body {
+    background-color:$MNMBlue;
+}
+
+//Type
+body {
+    @include TradeGothicRegular();
+}
+header {
+    + .container {
+        color:#fff;
+    }
+}
+h1, h2, h3, h4, h5, h6, strong, b {
+    @include TradeGothicBold();
+}
+h1 {
+    font-size:64px;
+    margin:0;
+    padding:0;
+
+}
 
 //Header
 header {
+    @include box-shadow(0 5px 5px rgba(0,0,0,.2));
+
     .logo {
         width: 165px;
         height: 43px;
