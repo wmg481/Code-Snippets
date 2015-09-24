@@ -6,4 +6,12 @@ $MNMLightBlue: #199cf6 !global;
 $MNMMedBlue: #2c7ccd !global;
 $MNMOverlay: #256CB3 !global;
 
+$MNMBlue-Light: saturate(lighten($MNMBlue, 10%), 4%);
+$MNMBlue-Med: saturate(lighten($MNMBlue, 15%), 4%);
+$MNMBlue-Dark: darken($MNMBlue, 5%);
+
+$MNMGreen-Light: saturate(lighten($MNMGreen, 4%), 10%);
+$MNMGreen-Med: darken($MNMGreen, 6);
+$MNMGreen-Bright: saturate($MNMGreen, 11);
+
 $PrimaryColor: $MNMBlue !global;

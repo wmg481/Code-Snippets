@@ -132,7 +132,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="sf_cols row Tile FactLightGray">
+								<div class="sf_cols row Tile FactLightBlue">
 									<div class="sf_colsOut sf_1col_1_100 col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<div class="sf_colsIn sf_1col_1in_100">
 											<div class="sf_cols row Fact">
@@ -155,7 +155,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="sf_cols row Tile FactMedGray">
+								<div class="sf_cols row Tile FactMedBlue">
 									<div class="sf_colsOut sf_1col_1_100 col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<div class="sf_colsIn sf_1col_1in_100">
 											<div class="sf_cols row Fact">
@@ -178,7 +178,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="sf_cols row Tile FactDarkGray">
+								<div class="sf_cols row Tile FactDarkBlue">
 									<div class="sf_colsOut sf_1col_1_100 col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<div class="sf_colsIn sf_1col_1in_100">
 											<div class="sf_cols row Fact">
@@ -202,7 +202,7 @@
 									</div>
 								</div>
 								<br class="clear-both" />
-								<div class="sf_cols row Tile FactLightGreen">
+								<div class="sf_cols row Tile FactGreen">
 									<div class="sf_colsOut sf_1col_1_100 col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<div class="sf_colsIn sf_1col_1in_100">
 											<div class="sf_cols row Fact">
@@ -225,7 +225,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="sf_cols row Tile FactMedGreen">
+								<div class="sf_cols row Tile FactLightGreen">
 									<div class="sf_colsOut sf_1col_1_100 col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<div class="sf_colsIn sf_1col_1in_100">
 											<div class="sf_cols row Fact">
@@ -248,7 +248,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="sf_cols row Tile FactDarkGreen">
+								<div class="sf_cols row Tile FactMedGreen">
 									<div class="sf_colsOut sf_1col_1_100 col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<div class="sf_colsIn sf_1col_1in_100">
 											<div class="sf_cols row Fact">
@@ -271,7 +271,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="sf_cols row Tile">
+								<div class="sf_cols row Tile FactBrightGreen">
 									<div class="sf_colsOut sf_1col_1_100 col-xs-12 col-sm-12 col-md-12 col-lg-12">
 										<div class="sf_colsIn sf_1col_1in_100">
 											<div class="sf_cols row Fact">
@@ -304,17 +304,17 @@
 		</div>
 		<script>
 			//Initiate Masonry Script and target Tiles
-			//var container = document.querySelector('.masonry');
-			//var msnry = new Masonry(container, {
-			//	// options
-			//	itemSelector: '.Tile'
-			//});
+			var container = document.querySelector('.masonry');
+			var msnry = new Masonry(container, {
+				// options
+				itemSelector: '.Tile'
+			});
 
 			//Random Facts Color Scheme Script
-			//var RandomFacts = ['FactLightGreen', 'FactMedGreen', 'FactDarkGreen', 'FactLightGray', 'FactMedGray', 'FactDarkGray'];
-			//$('.TilesContainer .Tile').each(function () {
-			//	$(this).addClass(RandomFacts[~~(Math.random() * RandomFacts.length)]);
-			//});
+			var RandomFacts = ['FactGreen', 'FactMedGreen', 'FactBrightGreen', 'FactLightBlue', 'FactMedBlue', 'FactDarkBlue'];
+			$('.TilesContainer .Tile').each(function () {
+				$(this).addClass(RandomFacts[~~(Math.random() * RandomFacts.length)]);
+			});
 		</script>
 </body>
 </html>

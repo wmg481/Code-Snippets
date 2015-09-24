@@ -371,7 +371,7 @@ a:hover .icon-ReadMore {
   .TilesContainer .Tile .sf_colsOut {
     padding: 0; }
   .TilesContainer .Tile .Fact.sf_cols.row {
-    background-color: #199cf6;
+    background-color: #2c7ccd;
     text-align: center;
     font-size: 20px;
     padding: 20px 10px !important;
@@ -384,41 +384,51 @@ a:hover .icon-ReadMore {
     margin-top: 20px !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
-    color: #72c267; }
+    color: #fff; }
   .TilesContainer .Tile .Fact.sf_cols.row .icon-Info:before {
     font-size: 50px;
     position: relative;
     top: 0;
     left: 0;
-    color: #06294c; }
+    color: #fff; }
 
 /* Tile/Fact Color Schemes */
 .TilesContainer {
   margin-top: 30px; }
+  .TilesContainer .Tile.FactLightBlue .Fact.sf_cols.row {
+    background-color: #0c75df; }
+  .TilesContainer .Tile.FactLightBlue .Fact.sf_cols.row .icon-Info:before,
+  .TilesContainer .Tile.FactLightBlue .Fact.sf_cols.row p {
+    color: #fff; }
+  .TilesContainer .Tile.FactMedBlue .Fact.sf_cols.row {
+    background-color: #1282f2; }
+  .TilesContainer .Tile.FactMedBlue .Fact.sf_cols.row .icon-Info:before,
+  .TilesContainer .Tile.FactMedBlue .Fact.sf_cols.row p {
+    color: #fff; }
+  .TilesContainer .Tile.FactDarkBlue .Fact.sf_cols.row {
+    background-color: #0b4f93; }
+  .TilesContainer .Tile.FactDarkBlue .Fact.sf_cols.row .icon-Info:before,
+  .TilesContainer .Tile.FactDarkBlue .Fact.sf_cols.row p {
+    color: #fff; }
+  .TilesContainer .Tile.FactGreen .Fact.sf_cols.row {
+    background-color: #72c267; }
+  .TilesContainer .Tile.FactGreen .Fact.sf_cols.row .icon-Info:before,
+  .TilesContainer .Tile.FactGreen .Fact.sf_cols.row p {
+    color: #fff; }
   .TilesContainer .Tile.FactLightGreen .Fact.sf_cols.row {
-    background-color: #c6e7c2; }
+    background-color: #78d16c; }
   .TilesContainer .Tile.FactLightGreen .Fact.sf_cols.row .icon-Info:before,
   .TilesContainer .Tile.FactLightGreen .Fact.sf_cols.row p {
-    color: #53b046; }
+    color: #fff; }
   .TilesContainer .Tile.FactMedGreen .Fact.sf_cols.row {
-    background-color: #72c267; }
+    background-color: #5eb951; }
   .TilesContainer .Tile.FactMedGreen .Fact.sf_cols.row .icon-Info:before,
   .TilesContainer .Tile.FactMedGreen .Fact.sf_cols.row p {
     color: #fff; }
-  .TilesContainer .Tile.FactDarkGreen .Fact.sf_cols.row {
-    background-color: #53b046; }
-  .TilesContainer .Tile.FactDarkGreen .Fact.sf_cols.row .icon-Info:before,
-  .TilesContainer .Tile.FactDarkGreen .Fact.sf_cols.row p {
-    color: #fff; }
-  .TilesContainer .Tile.FactMedGray .Fact.sf_cols.row {
-    background-color: #0d5cab; }
-  .TilesContainer .Tile.FactMedGray .Fact.sf_cols.row .icon-Info:before,
-  .TilesContainer .Tile.FactMedGray .Fact.sf_cols.row p {
-    color: #72c267; }
-  .TilesContainer .Tile.FactDarkGray .Fact.sf_cols.row {
-    background-color: #06294c; }
-  .TilesContainer .Tile.FactDarkGray .Fact.sf_cols.row .icon-Info:before,
-  .TilesContainer .Tile.FactDarkGray .Fact.sf_cols.row p {
+  .TilesContainer .Tile.FactBrightGreen .Fact.sf_cols.row {
+    background-color: #69ce5b; }
+  .TilesContainer .Tile.FactBrightGreen .Fact.sf_cols.row .icon-Info:before,
+  .TilesContainer .Tile.FactBrightGreen .Fact.sf_cols.row p {
     color: #fff; }
 
 /* Media Queries */
