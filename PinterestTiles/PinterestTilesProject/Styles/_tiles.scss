@@ -29,7 +29,8 @@
             margin-right: 0 !important;
             color:$White;
         }
-        .Fact.sf_cols.row .icon-Info:before {
+        .Fact.sf_cols.row .icon-Info:before,
+        .Fact.sf_cols.row .fa:before {
             font-size:50px;
             position: relative;
             top: 0;

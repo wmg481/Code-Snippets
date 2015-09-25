@@ -385,7 +385,8 @@ a:hover .icon-ReadMore {
     margin-left: 0 !important;
     margin-right: 0 !important;
     color: #fff; }
-  .TilesContainer .Tile .Fact.sf_cols.row .icon-Info:before {
+  .TilesContainer .Tile .Fact.sf_cols.row .icon-Info:before,
+  .TilesContainer .Tile .Fact.sf_cols.row .fa:before {
     font-size: 50px;
     position: relative;
     top: 0;
